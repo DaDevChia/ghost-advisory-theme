@@ -2,7 +2,8 @@ const glob = require("glob");
 const path = require("path");
 
 module.exports = {
-    mode: "production",
+    mode: "development",
+    devtool: "source-map",
     entry: Object.fromEntries(
         glob
             .sync("./assets/js/*.js")
